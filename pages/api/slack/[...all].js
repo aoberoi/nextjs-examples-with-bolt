@@ -5,7 +5,6 @@ const receiver = new HTTPReceiver({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
   processBeforeResponse: true,
   endpoints: '/api/slack/events',
-  logLevel: LogLevel.DEBUG,
 });
 
 bolt(receiver);
